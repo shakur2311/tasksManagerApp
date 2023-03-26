@@ -5,7 +5,7 @@ const CreateTask = ({tasks,setTasks}) => {
     return (
         <div className='createTask d-flex'>
             <input type="text" className='form-control' value={taskInput}
-            onChange={(e)=>{setTaskInput(e.target.value)}}/>
+            onChange={(e)=>{setTaskInput(e.target.value)}} placeholder="Add a Task..."/>
             <button className="btn btn-primary ms-3" onClick={()=>{
                 setTasks(([...tasks,taskInput]));
                 setTaskInput('');
